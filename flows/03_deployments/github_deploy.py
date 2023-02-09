@@ -12,7 +12,7 @@ class MyFlowTask(Task):
 
 
 # Initialize a Flow object
-flow = Flow("My Prefect Flow", storage=GitHub(repo="anammari/prefect-zoomcamp"))
+flow = Flow("My Prefect Flow", storage=GitHub(repo="https://github.com/anammari/prefect-zoomcamp"))
 
 # Add the MyFlowTask to the flow
 task = MyFlowTask()
